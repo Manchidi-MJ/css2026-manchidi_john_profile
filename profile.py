@@ -5,8 +5,8 @@ from datetime import datetime
 # PAGE CONFIG
 # ───────────────────────────────────────────────
 st.set_page_config(
-    page_title="Magaseng John Manchidi – MSc Computer Science",
-    page_icon="🎓🇿🇦",
+    page_title="Magaseng John Manchidi – MSc Cybersecurity",
+    page_icon="🎓🔒",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -42,7 +42,7 @@ st.markdown("""
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/96/student-male.png", width=100)
     st.title("Magaseng John Manchidi")
-    st.markdown("**MSc Computer Science Candidate**")
+    st.markdown("**MSc Cybersecurity Candidate**")
 
     st.divider()
 
@@ -65,7 +65,7 @@ with st.sidebar:
 st.markdown('<div class="main-header">Magaseng John Manchidi</div>', unsafe_allow_html=True)
 st.markdown(
     '<p style="text-align:center; font-size:1.45rem; color:#64748b; margin-bottom:2rem;">'
-    'MSc Computer Science Student  •  Researcher  •  Software Developer</p>',
+    'MSc Cybersecurity Student  •  Researcher  •  Software Developer</p>',
     unsafe_allow_html=True
 )
 
@@ -77,41 +77,29 @@ if page == "🏠 Home":
     col_left, col_right = st.columns([1, 3])
 
     with col_left:
-        # IMPORTANT:
-        # 1. Upload your real photo to the GitHub repository (same folder as this file)
-        # 2. Name it something simple like: profile.jpg   or   manchidi.jpg
-        # 3. Then change the line below to match the exact filename
-        #
-        # For testing you can temporarily use the online placeholder image (uncomment if needed)
-
+        # Upload your photo to GitHub repo and update filename here
         st.image(
-            "My Picture.jpg",                      # ← CHANGE THIS to your actual filename
+            "My Picture.jpg",
             caption="Magaseng John Manchidi",
-            use_container_width=True               # ← fixed: this is the correct parameter
+            use_container_width=True
         )
-
-        # Placeholder / fallback version (uncomment to test without uploading photo):
-        # st.image(
-        #     "https://images.unsplash.com/photo-1556155099-490a1ba16284?w=400",
-        #     caption="Magaseng John Manchidi",
-        #     use_container_width=True
-        # )
 
     with col_right:
         st.markdown('<div class="sub-header">About Me</div>', unsafe_allow_html=True)
         st.markdown("""
-        Master's student in **Computer Science** with strong interest in  
-        practical software solutions — especially those relevant to South African communities.
+        Master's student in **Cybersecurity** at the **University of Limpopo**  
+        with strong interest in practical security solutions, defensive technologies  
+        and protecting digital systems — especially in the South African context.
 
         Academic background:
-        • BSc Computer Science and Statistics
-        • BSc Honours in Computer Science
+        • BSc Computer Science and Statistics – University of Limpopo
+        • BSc Honours in Computer Science – University of Limpopo
 
-        Current interests:
-        • Interactive data applications & dashboards
-        • Personal finance tools (ZAR context)
-        • Learning full-stack development & AI-assisted coding
-        • Socially relevant computing research
+        Current focus:
+        • Cybersecurity fundamentals & applied security
+        • Threat detection & incident response
+        • Secure software development practices
+        • Interactive tools for security awareness and education
         """)
 
         st.info("Open to collaboration, internships, project ideas or discussions!")
@@ -120,16 +108,16 @@ if page == "🏠 Home":
 elif page == "🎓 Education":
     st.markdown('<div class="sub-header">Education</div>', unsafe_allow_html=True)
 
-    st.subheader("MSc Computer Science")
-    st.caption("In progress • 2025 – present")
-    st.markdown("Research direction under development")
+    st.subheader("MSc Cybersecurity")
+    st.caption("University of Limpopo • In progress • 2025 – present")
+    st.markdown("Research direction under development – focus on applied cybersecurity")
 
     st.subheader("BSc Honours in Computer Science")
-    st.caption("Completed")
+    st.caption("University of Limpopo • Completed")
     st.markdown("Advanced topics + mini-dissertation/project")
 
     st.subheader("BSc Computer Science and Statistics")
-    st.caption("Completed")
+    st.caption("University of Limpopo • Completed")
     st.markdown("""
     Foundation in:
     • Programming & data structures
@@ -142,14 +130,14 @@ elif page == "🛠 Skills":
     st.markdown('<div class="sub-header">Technical Skills</div>', unsafe_allow_html=True)
 
     skills = [
-        ("Python",               88, "scripting • data • web apps"),
-        ("Streamlit",            85, "interactive dashboards"),
-        ("Pandas / NumPy",       82, "data manipulation & analysis"),
+        ("Python",               88, "scripting • security tools • automation"),
+        ("Streamlit",            85, "interactive dashboards & security prototypes"),
+        ("Pandas / NumPy",       82, "data manipulation & log analysis"),
         ("Git & GitHub",         78, "version control"),
-        ("SQL",                  72, "database querying"),
+        ("SQL",                  72, "database querying & security"),
         ("JavaScript / HTML/CSS", 60, "frontend basics"),
-        ("Scikit-learn basics",  50, "introductory machine learning"),
-        ("Linux / CLI",          68, "development environment"),
+        ("Cybersecurity basics", 65, "networking, encryption, vulnerability scanning"),
+        ("Linux / CLI",          75, "system hardening & forensics"),
     ]
 
     cols = st.columns(3)
@@ -161,27 +149,29 @@ elif page == "🛠 Skills":
 
 
 elif page == "🔬 Research":
-    st.markdown('<div class="sub-header">Research Interests</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Cybersecurity Research Interests</div>', unsafe_allow_html=True)
 
     for item in [
-        "Financial technology tools for South African users",
-        "Interactive data visualization & dashboards",
-        "Machine learning applications in low-resource settings",
-        "Educational technology & digital inclusion",
-        "Local language processing (exploratory)",
-        "Ethical & explainable AI",
+        "Cyber threat detection and prevention in resource-constrained environments",
+        "Secure software development lifecycle (SSDLC) practices",
+        "Incident response and digital forensics tools",
+        "Cybersecurity awareness & education platforms",
+        "Network security & intrusion detection systems",
+        "Privacy-preserving technologies & ethical hacking approaches",
+        "Applications of machine learning in cybersecurity (anomaly detection, malware classification)",
     ]:
         st.markdown(f"• {item}")
 
     st.divider()
     st.subheader("Master's Research (in progress)")
     st.info("""
-    Topic under discussion with supervisor.
+    Topic under discussion with supervisor at the University of Limpopo.
 
     Possible directions:
-    • Personal finance / budgeting tools with local context
-    • Data-driven solutions for small businesses / communities
-    • Lightweight ML models suitable for mobile/edge
+    • Lightweight security monitoring solutions for small organizations
+    • User-centric cybersecurity awareness tools
+    • Threat intelligence sharing mechanisms in African context
+    • Applied cryptography or secure protocol implementations
     """)
 
 
@@ -193,6 +183,7 @@ elif page == "📂 Projects":
         • Budgeting & expense tracking dashboard  
         • Features: transactions, budgets, accounts, savings goals  
         • Stack: Streamlit, Pandas, Plotly  
+        • Security considerations: input validation, secure session handling
         """)
         if st.button("Show celebration", key="fintrack-celebration"):
             st.balloons()
